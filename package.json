@@ -17,5 +17,40 @@
     "bugs": {
         "url": "https://github.com/hafdon/readfile/issues"
     },
-    "homepage": "https://github.com/hafdon/readfile#readme"
+    "homepage": "https://github.com/hafdon/readfile#readme",
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-recommended": "^4.0.0",
+        "mocha": "^6.1.4",
+        "nodemon": "^1.19.1"
+    },
+    "jshintConfig": {
+        "esversion": 9,
+        "asi": true,
+        "debug": true,
+        "node": true
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "semi": true,
+        "singleQuote": true
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2018,
+            "sourceType": "module",
+            "es6": true
+        },
+        "env": {
+            "browser": true,
+            "node": true,
+            "es6": true
+        },
+        "extends": "eslint:recommended",
+        "rules": {}
+    },
+    "eslintIgnore": [
+        "**/out/*.js"
+    ]
 }
